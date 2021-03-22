@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.row {
+  display: flex;
+  margin: 8px 0;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.col {
+  width: 50%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+
+  padding: 0 7px 7px 7px;
+  font-size: 13px;
+  width: inherit;
+  border: 0;
+  border-bottom: 2px solid rgba(31, 31, 31, 0.596);
+  border-radius: 20px;
+
+  text-overflow: ellipsis;
+}
+
+input:focus-visible {
+  outline: none;
+  border-bottom: 2px solid rgba(63, 163, 221, 0.63);
+  box-shadow: 0px 4px 5px 0px rgba(63, 163, 221, 0.63);
+}
+
+button {
+  padding: 13px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border-radius: 25px;
+  background-color: white;
+  border: 2px rgba(0, 0, 0, 0.459) solid;
+  outline: none;
+  transition: transform 0.1s ease-in;
+  box-shadow: 0 0 10px 0px rgba(63, 163, 221, 0.63);
+}
+
+button:hover {
+  box-shadow: 0 0 20px 0px rgba(63, 163, 221, 0.63);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.07);
+}
+
+.link {
+  color: rgba(48, 137, 189, 0.904);
+  /* border-bottom: 1px solid rgba(48, 137, 189, 0.904); */
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
